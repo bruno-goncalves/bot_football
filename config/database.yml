@@ -16,6 +16,7 @@ test:
 
 production:
   primary: &primary_production
+    <<: *default
     host: <%= ENV["DB_HOST"] %>
     port: <%= ENV["DB_PORT"] %>
     password: <%= ENV["POSTGRES_PASSWORD"] %>
