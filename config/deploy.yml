@@ -77,8 +77,8 @@ accessories:
     port: 5433
     env:
       clear:
-        POSTGRES_USER: botfootball
-        POSTGRES_DB: botfootball_production
+        POSTGRES_USER: bot_football
+        POSTGRES_DB: bot_football_production
       secret:
         - POSTGRES_PASSWORD
     files:
