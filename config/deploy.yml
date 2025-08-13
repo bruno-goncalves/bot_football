@@ -42,7 +42,7 @@ env:
     RAILS_LOG_TO_STDOUT: "1"
     RAILS_SERVE_STATIC_FILES: "true"
     DB_HOST: bot_football-db
-    DB_PORT: "5432"
+    DB_PORT: "5433"
     POSTGRES_USER: bot_football
     POSTGRES_DB: bot_football_production
 
@@ -74,7 +74,7 @@ accessories:
   db:
     image: postgres:16
     host: 195.110.58.31
-    port: 5432
+    port: 5433
     env:
       clear:
         POSTGRES_USER: botfootball

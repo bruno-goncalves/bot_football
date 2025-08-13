@@ -1,0 +1,4 @@
+CREATE DATABASE bot_football_production;
+CREATE DATABASE bot_football_production_cache;
+CREATE DATABASE bot_football_production_queue;
+CREATE DATABASE bot_football_production_cable;
