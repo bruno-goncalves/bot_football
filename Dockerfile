@@ -43,8 +43,7 @@ RUN bundle exec bootsnap precompile app/ lib/
 
 # Precompile assets (Propshaft + Tailwind). Use dummy secret to avoid requiring RAILS_MASTER_KEY.
 # Ensure tailwind.config.js content globs are correct so purge doesn't remove styles.
-ENV SECRET_KEY_BASE_DUMMY=1
-RUN bundle exec rails assets:precompile
+RUN SECRET_KEY_BASE_DUMMY=1 bundle exec rails assets:precompile
 
 # ------------------------------------------------------------------------------
 # Final runtime image
