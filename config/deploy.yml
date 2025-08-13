@@ -41,10 +41,10 @@ env:
     RACK_ENV: production
     RAILS_LOG_TO_STDOUT: "1"
     RAILS_SERVE_STATIC_FILES: "true"
-    DB_HOST: botfootball-db
+    DB_HOST: bot_football-db
     DB_PORT: "5432"
-    POSTGRES_USER: botfootball
-    POSTGRES_DB: botfootball_production
+    POSTGRES_USER: bot_football
+    POSTGRES_DB: bot_football_production
 
 # Aliases are triggered with "bin/kamal <alias>". You can overwrite arguments on invocation:
 # "bin/kamal logs -r job" will tail logs from the first server in the job section.
