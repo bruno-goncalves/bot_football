@@ -77,7 +77,7 @@ accessories:
     port: 5432
     env:
       clear:
-        POSTGRES_USER: postgres
+        POSTGRES_USER: bot_football
       secret:
         - POSTGRES_PASSWORD
     files:
