@@ -1,0 +1,10 @@
+servers:
+  web:
+    - YOUR_VPS_IP
+
+labels:
+  traefik.enable: "true"
+  traefik.http.routers.bot_football.rule: "Host(`botfootball.uk`)"
+  traefik.http.routers.bot_football.entrypoints: "websecure"
+  traefik.http.routers.bot_football.tls: "true"
+  traefik.http.services.bot_football.loadbalancer.server.port: "3000"
