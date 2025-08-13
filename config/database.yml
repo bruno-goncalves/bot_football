@@ -16,10 +16,11 @@ test:
 
 production:
   primary: &primary_production
-    <<: *default
+    host: <%= ENV["DB_HOST"] %>
+    port: <%= ENV["DB_PORT"] %>
+    password: <%= ENV["POSTGRES_PASSWORD"] %>
     database: bot_football_production
     username: bot_football
-    password: <%= ENV["BOT_FOOTBALL_DATABASE_PASSWORD"] %>
   cache:
     <<: *primary_production
     database: bot_football_production_cache
